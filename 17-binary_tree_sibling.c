@@ -7,7 +7,7 @@
  * Return: pointer to sibling nod, or NULL on failure
 */
 
-binary_tree_t *binary_tree_sibling(const binary_tree_t *node)
+binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
 	if (!node || !node->parent || !node->parent->left || !node->parent->right)
 		return (NULL);
